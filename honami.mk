@@ -15,7 +15,7 @@
 # Inherit the fusion-common definitions
 $(call inherit-product, device/sony/rhine-common/rhine.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/sony/honami/overlay
+#DEVICE_PACKAGE_OVERLAYS += device/sony/honami/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
+   $(LOCAL_PATH)/audio/mixer_paths.xml:system/vendor/etc/mixer_paths.xml
 
 # Sensors
 PRODUCT_COPY_FILES += \
